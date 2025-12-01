@@ -5,19 +5,13 @@
 
 // Basic array
 // This is just an example, the best practice is to store a single data type to an array
-<<<<<<< HEAD
 // const myArray = [1, 2, 3, 4, "Hello", true, null];
 // console.log(myArray.length);
-=======
-const myArray = [1, 2, 3, 4, "Hello", true, null];
-console.log(myArray.length);
->>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 
 // B) ARRAY METHODS
 
 // i - map function of an array
 // Implement your code here
-<<<<<<< HEAD
 const mappedArray = [1, 2, 3, 4, 5, 6];
 const mulitplyArrBy10 = mappedArray.map(item => item * 10);   /*short-hand of the arrow function */
 console.log(mulitplyArrBy10); // [10, 20, 30, 40, 50, 60]
@@ -37,16 +31,6 @@ console.log(mulitplyArrBy100); // [10, 20, 30, 40, 50, 60]
 //      return (vowel == "a" || vowel == "u")
 // });
 // console.log(filteredVowels); // ["a"]
-=======
-const mappedArray = [1, 2, 3, 4, 5, 6]; 
-
-const multiplyArrBy10 = mappedArray.map(item => item * 10); /* Short-hand of the arrow function */
-console.log(multiplyArrBy10);
-
-// ii - filter function of an array
-// Implement your code here
-const vowels = ["a", "e", "i", "o"];
->>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 
 // ? re-write the example below using an arrow function (long-form)
 const filteredVowels = vowels.filter(vowel => vowel === "a" || vowel === "u");
@@ -54,7 +38,6 @@ console.log(filteredVowels);
 
 // iii - sort function of an array
 // Implement your code here
-<<<<<<< HEAD
 // arrays to sort
 const nums = [4, 1, 3, 5, 2, 6];
 const names = ["James", "Chris", "Max", "Lenon"];
@@ -141,23 +124,6 @@ console.log(`names: ${names}`); // ['Chris', 'James', 'Lenon', 'Max']
 //CONCLUSION: Only .toSorted and .toReversed preserve the order of the original array (immutable )
 // all other methods change the order of the original array (mutable).
 // ========================================================================
-=======
-const nums =  [1, 3, 2, 5, 4, 6]; 
-const names = ["James", "Chris", "Max", "Lenon"];
-
-// Sort by descending order
-// Implement your code here
-const descendNums = nums.sort((a, b) => a > b ? -1 : 1 );
-console.log("descendNums", descendNums);
-
-const ascendNums = nums.sort((a, b) => a > b ? 1 : -1 ); /* num.sort() acheives the same: ascending sort */
-console.log("ascendNums", ascendNums);
-
-// Sort by descending order
-// Implement your code here
-const descendNames = names.sort((a, b) => a > b ? -1 : 1 );
-console.log(descendNames);
->>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 
 const ascendNames = names.sort();   /* By default, array.sort() sorts in ascending order */
 console.log(ascendNames);
@@ -168,7 +134,6 @@ const numbers = new Array(1, 2, 3, 4);
 const product_of_arr = numbers.reduce((a, b) => a * b);     // 24
 console.log(product_of_arr);
 
-<<<<<<< HEAD
 
 // another approach of applying a reuduce function of an array
 // Implement your code here
@@ -221,11 +186,6 @@ bbTeam.splice(bbTeam.length - 1, 1, newPlayer2);  // replace Bill with Rodman
 console.log(bbTeam);
 
 
-=======
-// another approach of applying a reduce function of an array
-// Implement your code here
-const arr = new Array(2, 3, 4, 5);
->>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 
 function product(a, b){
     return a * b;
@@ -275,7 +235,6 @@ for (let index = 0; index < max; index++) {
     console.log(index)
 }
 
-<<<<<<< HEAD
 const max100 = 100;
 for (let index = 10; index <= 100; index = index + 10) {
     console.log(index)
@@ -310,30 +269,6 @@ for (let index = 0; index < tSymbols.length; index++) {
 // For Each : using Arrow function with or without string interpolation
 tSymbols.forEach(myElement => { console.log(myElement) });
 tSymbols.forEach((myElement, index) => { console.log(`${index + 1} ${myElement}`) });
-=======
-// Do a count up (1 - 10)
-const max = 10;
-for (let index = 1; index <= max; index++) {
-   console.log(index);
-}
-
-// change the index, the condition and the step (variables that can change)
-const max100 = 100;
-for (let index = 10; index <= max100 ; index = index + 10) {
-    console.log(index);                                         // 10, 20, 30, 40, 50 ... 100
-}
-
-// count down (10 - 1); TERNARY operation
-for (let index = max; index >= 0 ; index--) {
-    // if(condition) ? execute if condition block : else block (ternary operation)
-    (index === 0) ? console.log("Merry X'mas") : console.log(index);
-}
-
-
-// ii - for-each loop
-// Implement your code here
-const tickerSymbols = ["META", "AMZN", "GOOG", "MSFT"];
->>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 
 for (let index = 0; index < tickerSymbols.length; index++) {
     console.log(`${index + 1}. ${tickerSymbols[index]}`);
@@ -344,7 +279,6 @@ tickerSymbols.forEach((element, index) => { console.log(`${index + 1}. ${element
 // iii - do-while loop (do first, check later)
 // Implement your code here
 // let i = 0;
-<<<<<<< HEAD
 // do {
 //     console.log(i);
 //     i++;
@@ -358,19 +292,3 @@ while (j<=10) {
 }
 
 // Implement your code here
-=======
-
-do {
-    console.log(i); // print 0 to 10
-    i++;
-} while (i <= 5);
-
-// iv - while loop (check the conditions first before running the while loop)
-// Implement your code here
-
-let j = 0;
-while (j <= 10) {
-    console.log(j); // print 0 to 10
-    j++;
-}
->>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
