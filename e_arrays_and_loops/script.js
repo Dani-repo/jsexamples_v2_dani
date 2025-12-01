@@ -130,8 +130,8 @@ console.log(ascendNames);
 
 // iv - reduce function of an array
 // Implement your code here
-const numbers = new Array(1, 2, 3, 4);
-const product_of_arr = numbers.reduce((a, b) => a * b);     // 24
+const numbers1 = new Array(1, 2, 3, 4);
+const product_of_arr1 = numbers1.reduce((a, b) => a * b);     // 24
 console.log(product_of_arr);
 
 
@@ -150,39 +150,39 @@ const myArr = new Array(2, 3, 4, 5);
 function product(a, b) {
     return a * b;
 }
-const resultOfProduct = myArr.reduce(product);
-console.log(resultOfProduct);
+const resultOfProduct2 = myArr.reduce(product);
+console.log(resultOfProduct2);
 
-const teamList = ["T", "S", "Z", "F"];
+const teamList2 = ["T", "S", "Z", "F"];
 //teamList[4] = "A"; 
-console.log(teamList);
+console.log(teamList2);
 
 teamList.push("A");  /* add an item to the last position an Array */
-console.log(teamList);
+console.log(teamList2);
 
 teamList.pop();  /* remove last item (largest index) from an Array */
-console.log(teamList);
+console.log(teamList2);
 
 
-const mag7 = ["FB", "AMZN", "AAPL", "NFLX", "GOOG"];
-console.log(mag7);          // FB, AMZN, AAPL, NFLX, GOOG
-console.log(mag7.shift());  // FB
-console.log(mag7);          // AMZN, AAPL, NFLX, GOOG  (1st item has been removed)
-mag7.unshift("META", "NVDA", "MSFT");  // META, NVDA, MSFT, AMZN, AAPL, NFLX, GOOG  (add 3 items to the beginning of the array)
-console.log(mag7);
+const mag71 = ["FB", "AMZN", "AAPL", "NFLX", "GOOG"];
+console.log(mag71);          // FB, AMZN, AAPL, NFLX, GOOG
+console.log(mag71.shift());  // FB
+console.log(mag71);          // AMZN, AAPL, NFLX, GOOG  (1st item has been removed)
+mag71.unshift("META", "NVDA", "MSFT");  // META, NVDA, MSFT, AMZN, AAPL, NFLX, GOOG  (add 3 items to the beginning of the array)
+console.log(mag71);
 
 // splice data
 
 const bbTeam = ["Jordan", "Pippen", "Bill"];
 console.log(bbTeam);
-const index = 2;
-const newPlayer = "Carr";
-bbTeam.splice(index, 0, newPlayer);  // 0 mean 0 item to be replaced (we are inserting)
+const index2 = 2;
+const newPlayer2 = "Carr";
+bbTeam.splice(index2, 0, newPlayer2);  // 0 mean 0 item to be replaced (we are inserting)
 console.log(bbTeam);
 
-const newPlayer2 = "Rodman";
+const newPlayer21 = "Rodman";
 //bbTeam.splice(3, 1, newPlayer2);  // replace Bill with Rodman
-bbTeam.splice(bbTeam.length - 1, 1, newPlayer2);  // replace Bill with Rodman
+bbTeam.splice(bbTeam.length - 1, 1, newPlayer21);  // replace Bill with Rodman
 console.log(bbTeam);
 
 
