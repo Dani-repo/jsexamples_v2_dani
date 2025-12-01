@@ -36,12 +36,20 @@ function validateInputs(choice, name = "") {
 // Chicken: "The main course served is Chicken Cordon Bleu."
 // Beef:    "The main course served is Beef Wellington." 
 // Others:  "We will contact you separately to arrange."
+<<<<<<< HEAD
 function ftnRadioMeal(meal) {
   let msg = "Thank you. ";
   // TODO: using switch statement to provide the appropriate feedback to the user
   // alert(`You have chosen:  ${meal}.`);
   // alert(`"ou have chosen: "+ meal);
 
+=======
+function ftnRadioMeal(meal){
+
+  let msg = "Thank you. ";
+
+  // TODO: using switch statement to provide the appropriate feedback to the user
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
   switch (meal) {
     case "Vegetarian":
       msg = msg + "Please contact us to arrange.";
@@ -52,12 +60,21 @@ function ftnRadioMeal(meal) {
     case "Chicken":
       msg = msg + "We are serving chicken cordon blue.";
       break;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
     default:
       msg = msg + "No meal preference.";
       break;
   }
 
+<<<<<<< HEAD
   //TODO: Display the message 
   document.getElementById("displayPreference").textContent = msg;
+=======
+  // TODO: Display the message to the user
+  document.getElementById("displayPreference").textContent = msg;
+
+>>>>>>> f9590f637c3e0f0120c70ac04ff5853a182e4710
 }

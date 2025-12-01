@@ -121,16 +121,16 @@
       // so long as one of the radio buttons is selected, set mealSelected to true and break out of the loop
 
       for (let index = 0; index < mealPreference.length; index++) {
-        if (mealPreference[index].checked) {
+        if(mealPreference[index].checked){
           mealSelected = true;
-          break; //prematurely end the loop
+          break;  /* prematurely end the for loop */
         }
       }
 
-      // TODO: using logical AND operation to ensure that name is validated == true AND mealSelected == true 
-      //return is required to exit/end the function
-      if (validated && mealSelected) {
-        return alert("Thank you. We received your submission")
+      // TODO: using logical AND operation to ensure that name is validated == true AND mealSelected == true
+      // Same as: if(validated === true AND mealSelected === true)
+      if(validated && mealSelected) {
+        return alert("Thank you. We received your submission.");
       }
 
       return alert("Please complete all inputs.");
