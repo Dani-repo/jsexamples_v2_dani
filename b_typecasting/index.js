@@ -32,6 +32,10 @@ console.log(Boolean("John"));    // output: true
 //"James"   output: true
 //""        output: false
 
+// import prompt-sync library as variable that can be used
+// import the prompt-sync library
+const prompt = require('prompt-sync')({sigint: true});  // allows CTRL+C to terminate the app
+
 function greetUser(){
     let userName = prompt("Please enter your name:");
     

@@ -20,3 +20,10 @@ for (let index = 0; index < arrCategories.length; index++) {
 arrCategories.forEach((element) => {
     console.log(element.name, element.description);
 });
+
+arrCategories.push({name: "Cat E", description: "Open"});
+console.log("log5: ", arrCategories);
+
+const myArr = new Array(10, 20, 30, 40, 50, 60);
+console.log(myArr);
+ 
