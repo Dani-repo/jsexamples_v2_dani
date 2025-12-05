@@ -12,32 +12,35 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <!-- include the javascript statements from script.js; add "defer" to alow script to run first (on top) -->
+    <script src="script.js" defer></script>  
+
+    <!-- Bootstrap JavaScript Library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous" defer
+    ></script>
+
   </head>
   <body>
     <h1 id="pageTitle">Document Object Model</h1>
     <p>Refer to script.js for the list of examples.</p>
 
     <!-- <span> tag for getElementsByTagName() -->
-    <span></span>
+    <span></span>   <!-- spans[0] -->
+    <span></span>   <!-- spans[1] -->
 
     <!-- <h1> tag for querySelector -->
-    <h2></h2>
+    <h2></h2>                   <!-- tag selector -->
+    <h3 class="heading3"></h3>  <!-- class selector -->
+    <h4 id = "heading4"></h4>   <!-- id selector -->
+    <input type="text">         <!-- input selector -->
 
     <!-- unorderlist list for append() -->
     <ul>
-        <li class="menuItem"></li>
-        <li class="menuItem"></li>
-        <li class="menuItem"></li>
-    </ul>
+        <!-- menu items dynamically generated -->
     
-    <!-- include the javascript statements from script.js -->
-    <script src="script.js"></script>
-
-    <!-- Bootstrap JavaScript Library -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
