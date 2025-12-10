@@ -3,7 +3,7 @@ async function fetchData() {
   try {
     /**take note of the prepended keyword await */
     const response = await fetch('https://reqres.in/api/unknown', {
-      headers: { 'x-api-key': 'reqres_5545dfd50783408cb276120a7022957b' },
+      headers: { 'x-api-key': REQRES_API_KEY },
     });
 
     if (response.status === 403)
@@ -12,7 +12,7 @@ async function fetchData() {
       throw new Error('Network response is NOT ok');
 
     /**take note of the prepended keyword await */
-    const result =  await response.json();
+    const result = await response.json();
     // console.log(result);
     console.log(result.data);
 

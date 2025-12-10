@@ -31,13 +31,16 @@ function addItem(item) {
 // 1. Implement the function fetchColorsList() using the browser Fetch API to download the full color list from the following endpoint:
 // https://reqres.in/api/unknown
 
+const apiKey = REQRES_API_KEY;
+console.log(apiKey);
+
 async function fetchColorsList() {
 
     try {
 
         // Using fetch, call for the 1st page of Data from the given url
         const response = await fetch("https://reqres.in/api/unknown",
-                { headers: { "x-api-key": "reqres_5545dfd50783408cb276120a7022957b" } }
+            { headers: { "x-api-key": REQRES_API_KEY } }
         );
         const resp = await response.json();
         //  console.log(resp);
@@ -52,7 +55,7 @@ async function fetchColorsList() {
         // start from the 2nd page (1st page has previously been fetched)
         for (let currentPage = page; currentPage <= totalPages; currentPage++) {
             const response = await fetch(`https://reqres.in/api/unknown?page=${currentPage}`,
-                     { headers: { "x-api-key": "reqres_5545dfd50783408cb276120a7022957b" } }
+                { headers: { "x-api-key": REQRES_API_KEY } }
             );
 
             const resp = await response.json();
